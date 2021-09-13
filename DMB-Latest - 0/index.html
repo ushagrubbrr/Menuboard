@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>Menu Board</title>
+</head>
+
+<body>
+<div class="row flex-row d-flex align-items-center align-content-center justify-content-center flex-wrap">
+<div class="col-lg-5 col-xl-5 col-xxl-5 p-5 position-relative h-100vh d-flex align-items-start flex-column justify-content-center">
+  <div class="slider-wrapper">         
+          <div class="slider">
+              <div class="slider-text1"><h1>Burger</h1><br/><br/>
+			  <h3>Enjoy your favourite<br/>
+Burger in a new whole way</h3><br/><br/>
+<h1>Shake</h1>
+<h3>Enjoy your favourite<br/>
+
+</div>
+              <div class="slider-text2"></div>
+              <div class="slider-text3">
+Burger in a new whole way</h3></div>
+          </div>
+        </div>  
+
+</div>
+<div class="col-lg-7 col-xl-7 col-xxl-7 position-relative">
+ <div class="slider-container">
+  <figure id="carousel--3d">
+    <input type="radio" name="carousel-3d" id="carousel-3d-controller-1" />
+    <input type="radio" name="carousel-3d" id="carousel-3d-controller-2" />
+    <input type="radio" name="carousel-3d" id="carousel-3d-controller-3" />
+							
+								
+								<label for="carousel-3d-controller-2" class="carousel-3d-item">
+									<div class="slide-img smoke">
+										<img src="img/burger.png" alt="" />
+									</div>
+									<div class="slide-content">
+									
+										<p></p>
+									</div>
+								</label>
+									<label for="carousel-3d-controller-1" class="carousel-3d-item">
+									<div class="slide-img">
+										<img src="img/product-1.png" alt="" />
+									</div>
+									<div class="slide-content">
+									
+										<p></p>
+									</div>
+								</label>
+								<label for="carousel-3d-controller-3" class="carousel-3d-item">
+									<div class="slide-img">
+										<img src="img/product-2.png" alt="" />
+									</div>
+									<div class="slide-content">
+									
+										<p></p>
+									</div>
+								</label>
+  </figure>
+</div>
+</div>
+</div>
+
+   <script>
+   var delay = 3500;
+var sliderRadios = document.getElementsByName("carousel-3d");
+var index=0
+var imageCount = sliderRadios.length;
+
+setInterval(function(){
+  index++;
+  if(index>imageCount-1){
+    index=0;
+  }
+  sliderRadios[index].click();
+  console.log(sliderRadios[index].id);
+},delay);
+   </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
