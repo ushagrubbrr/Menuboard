@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+body{
+	/*background:url('../img/bg1.jpg');
+	background-position:bottom right;
+	background-size:cover;*/
+	background-color:#000;
+	max-height:100vh;
+	overflow:hidden;
+	margin: 0; height: 100%;
+	font-family:'Roboto-regular', sans-serif;
+	font-size:2rem;
+}
+.h-100vh{
+	height:100vh;
+}
+.h-40vh{
+	height:40vh;
+}
+.mt-27{
+	margin-top:27rem;
+}
+h1{
+	font-size: 5rem;
+    color: #ffb300;
+    font-weight: 700;
+	font-family:'Roboto-bold', sans-serif;
+}
+h2{
+	font-size: 3.5rem;
+    color: #fff;
+	text-align: center;
+	text-transform:uppercase;
+    font-weight: 700;
+		font-family:'Roboto-bold', sans-serif;
+}
+h2 span{
+	color:#ffb300;
+}
+.item-name h2{
+	font-size: 3.5rem;
+    color: #ffb300;
+	text-align: left;
+	text-transform:uppercase;
+    font-weight: 700;
+		font-family:'Roboto-bold', sans-serif;margin-top: 1rem;
+}
+.item-name strong{
+	color: #bfbfbf;font-size: 2.5rem;
+}
+.item-name h3{
+	text-transform:uppercase;    margin-top: 0.1rem;color:#fff;
+}
+h3{
+	font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #ffb300;
+		font-family:'Roboto-bold', sans-serif;
+}
+.price{
+	color:#ffb300;    margin-top: 0rem !important;
+}
+.menu-list{
+	    background: #1e1e1e;
+    height: 45rem;
+    color: #fff;
+}
+.text-left{
+	text-align:left;
+}
+.w-70{
+	width:70%;
+}
+ #carousel {
+	 position: relative;
+}
+#carousel figure img{
+	margin-top:-1rem;
+}
+#carousel figure.smoke::before{
+background: url(../img/smoke.gif);
+    content: '';
+    position: absolute;
+    height: 17rem;
+    z-index: 0;
+    width: 10rem;
+    background-size: 100%;
+    right: 9%;
+    top: 2%;
+	
+}
+ #carousel figure {
+display: block;
+    animation: rotate 20000ms ease-in-out infinite;
+    position: absolute;
+    /* background-color: white; */
+    /* padding: 12em; */
+    text-align: center;
+    width: 35%;
+    box-shadow: none;
+    border: none;
+}
+ #carousel figure:nth-child(0) {
+	 animation-delay: -25s;
+}
+ #carousel figure:nth-child(1) {
+	 animation-delay: -20s;
+}
+ #carousel figure:nth-child(2) {
+	 animation-delay: -15s;
+}
+ #carousel figure:nth-child(3) {
+	 animation-delay: -10s;
+}
+ #carousel figure:nth-child(4) {
+	 animation-delay: 0s;
+}
+ #carousel figure:nth-child(5) {
+	 animation-delay: 10s;
+}
+ #carousel figure:nth-child(6) {
+	 animation-delay: 15s;
+}
+ #carousel figure:nth-child(7) {
+	 animation-delay: 20s;
+}
+ @keyframes rotate {
+	 0%, 20%, 96%, 100% {
+		 transform: rotateY(0deg) scale(0.7);
+		 right: 5%;		
+		 z-index: -1;
+		 -webkit-filter: opacity(80%) blur(3px);
+	}
+	 21%, 45% {
+		 transform: rotateY(0deg) scale(1);
+		 right: 35%;		
+		 z-index: 100;
+		 -webkit-filter: opacity(100%) blur(0px);
+	}
+	 46%, 70% {
+		 transform: rotateY(0deg) scale(0.7);
+		 right: 65%;		
+		 z-index: -1;
+		 -webkit-filter: opacity(80%) blur(3px);
+	}
+	 71%, 95% {
+		 transform: rotateY(-90deg) scale(0.7);
+		 right: 65%;		
+		 z-index: 0;
+		 -webkit-filter: opacity(0%) blur(0px);
+	}
+}
+ 
+
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}@font-face {
+  font-family: Roboto-bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}@font-face {
+  font-family: Roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-light;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+.text-right{
+	text-align:right;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+body{
+	/*background:url('../img/bg.jpg');
+	background-position:bottom center;
+	background-size:cover;*/
+	background-color:#1d1d1d;
+	font-family:'Roboto-regular', sans-serif;
+	font-size:2rem;
+}
+.h-100vh{
+	height:100vh;
+}
+.slider-wrapper {
+  font-size: 40px;
+  color:#aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  height: 20rem;
+  padding-left:15px;
+  overflow: hidden;
+}
+.slider div {
+ /* color:#fff;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 2px 15px;
+  text-align: center;*/
+  box-sizing: border-box;
+}
+.slider-text1 {
+ /* background: lightgreen;*/
+  animation: slide 10s linear infinite;
+}/*
+.slider-text2 {
+  background: skyblue;
+}
+.slider-text3 {
+  background: lightcoral;
+}*/
+@keyframes slide {
+  0% {margin-top:-20rem;}
+  5% {margin-top:-20rem;}
+   25% {margin-top:-20rem;}
+  33% {margin-top:-20rem;}
+  38% {margin-top:-10rem;}
+  45%{margin-top:-10rem;}
+    55% {margin-top:-10rem;}
+  66% {margin-top:-10rem;}
+  71% {margin-top:0px;}
+  100% {margin-top:0px;}
+}
+.slider-container {
+  position: relative;
+  perspective: 15rem;
+  transform-style: preserve-3d;
+  margin-top:-30vh;
+}
+.slide-img{text-align:center;}
+.slide-img img{max-width:80%;}
+#carousel--3d input[type=radio]{
+	display:none;
+}
+.carousel-3d-item {
+  position: absolute;
+left:0;
+ /*   top:-50%;
+  left: 40%;*/
+  outline: 1px solid transparent;
+}
+h1{
+	font-size: 8rem;
+    color: #fff;
+    font-weight: 700;
+	font-family:'Roboto-bold', sans-serif;
+}
+
+h3{
+	font-size: 4rem;
+    margin-top: 2rem;
+    color: #fff;
+	font-family:'Roboto-bold', sans-serif;
+}
+
+#carousel--3d .smoke::before{
+background: url(../img/smoke.gif);
+    content: '';
+    position: absolute;
+    height: 17rem;
+    z-index: 0;
+    width: 10rem;
+    background-size: 100%;
+  left: 27%;
+    top: -34%;
+	
+}
+#carousel-3d-controller-2 ~ .carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-1 ~ .carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-2 ~ .carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-1 ~ .carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-2 ~ .carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-1 ~ .carousel-3d-item:nth-of-type(3),
+{
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+}
+
+.carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-1:checked ~ .carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-2:checked ~ .carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-3:checked ~ .carousel-3d-item:nth-of-type(1) {
+  transform: translateX(-30rem) translateZ(-20rem);
+  opacity: .9;
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+}
+
+.carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-1:checked ~ .carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-2:checked ~ .carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-3:checked ~ .carousel-3d-item:nth-of-type(3) {
+  transform: translateX(0) translateZ(0);
+  opacity: 1;
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+}
+
+.carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-1:checked ~ .carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-2:checked ~ .carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-3:checked ~ .carousel-3d-item:nth-of-type(2) {
+  transform: translateX(30rem) translateZ(-20rem);
+  opacity: .9;
+  transition: all 1s cubic-bezier(.48, .16, .15, .98);
+}
+
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}@font-face {
+  font-family: Roboto-bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}@font-face {
+  font-family: Roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-light;
+  src: url(../fonts/Roboto-Light.ttf);
+}
