@@ -18,7 +18,7 @@
                <title>Slider</title>
                <meta name="description" content="">
                <meta name="author" content="">
-               <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+               <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
                <link rel="stylesheet" href="css/bootstrap.min.css" />
                <link rel="stylesheet" href="css/style.css" />
                <link href="style.css" rel="stylesheet" type="text/css">
@@ -654,14 +654,20 @@
                <!-- <script src="js/jquery-3.2.1.slim.min.js"></script>-->
                <!--  <script src="js/popper.min.js"></script>-->
                <script src="js/bootstrap.min.js"></script>
-               <script type="text/javascript">var lsjQuery = jQuery;</script>
+              <script type="text/javascript">var lsjQuery = jQuery;</script>
 			   <script type="text/javascript"> lsjQuery(document).ready(function() { 
 			  
 			   if(typeof lsjQuery.fn.layerSlider == "undefined") 
 			   { lsShowNotice('layerslider_1','jquery'); } 
-			   else { lsjQuery("#layerslider_4").layerSlider({responsiveUnder: 1170, layersContainer: 1170, loops: 0,
-				 autoStart               : true,
-    responsive              : true,skinsPath: 'js/layerslider/skins/'}) } }); </script>
+			   else { lsjQuery("#layerslider_4").layerSlider({responsiveUnder: 1170, layersContainer: 1170, cycles: 1,pauseOnHover: 'disabled',
+				 autoStart               : true,allowRestartOnResize: true,keybNav: false,				touchNav: false,navPrevNext: false,
+				hoverPrevNext: false,				navStartStop: false,				navButtons: false,    responsive: true,skinsPath: 'css/skin.css'})				} 
+				
+				}); 
+	
+	</script>
+
+
             </body>
             <!-- Mirrored from wedesignthemes.com/html/kidslife/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Sep 2021 06:09:54 GMT -->
          </html>
