@@ -45,7 +45,7 @@
                <div id="main">
                   <div id="slider">
                      <div id="layerslider_4" class="ls-wp-container" style="width:100%;height:1080px;max-width:1920px;margin:0 auto;margin-bottom: 0px;">
-                        <div class="ls-slide" data-ls="slidedelay:2000; transition2d: all;">
+                        <div class="ls-slide" data-ls="slidedelay:7000; transition2d: all;">
                            <img src="images/bg1.jpg" class="ls-bg" alt="Slide background" />
                            <div class="row ls-l" style="left:15% !important;width:30% !important;">
                               <div style="top:20%; font-size:250%;  left:0%; color:#000; text-align:center;" data-ls="durationin: 2000; delayin: 200; offsetxout:0;    width: 100%;">
@@ -654,7 +654,14 @@
                <!-- <script src="js/jquery-3.2.1.slim.min.js"></script>-->
                <!--  <script src="js/popper.min.js"></script>-->
                <script src="js/bootstrap.min.js"></script>
-               <script type="text/javascript">var lsjQuery = jQuery;</script><script type="text/javascript"> lsjQuery(document).ready(function() { if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_1','jquery'); } else { lsjQuery("#layerslider_4").layerSlider({responsiveUnder: 1170, layersContainer: 1170, skinsPath: 'js/layerslider/skins/'}) } }); </script>
+               <script type="text/javascript">var lsjQuery = jQuery;</script>
+			   <script type="text/javascript"> lsjQuery(document).ready(function() { 
+			  
+			   if(typeof lsjQuery.fn.layerSlider == "undefined") 
+			   { lsShowNotice('layerslider_1','jquery'); } 
+			   else { lsjQuery("#layerslider_4").layerSlider({responsiveUnder: 1170, layersContainer: 1170, loops: 0,
+				 autoStart               : true,
+    responsive              : true,skinsPath: 'js/layerslider/skins/'}) } }); </script>
             </body>
             <!-- Mirrored from wedesignthemes.com/html/kidslife/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Sep 2021 06:09:54 GMT -->
          </html>
